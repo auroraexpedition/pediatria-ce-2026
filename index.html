@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14213d">
+<title>Minha grade Pediatria CE 2026</title>
+<meta name="description" content="Monte sua grade pessoal de palestras do 20º Congresso Cearense de Pediatria e 3º Congresso Cearense do Desenvolvimento e Comportamento da Primeira Infância (Fortaleza, 12 e 13 de novembro de 2026).">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pediatria CE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213d'/%3E%3Cpath d='M18 34l10 10 18-20' fill='none' stroke='%23fca311' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#14213d; --navy2:#1f2f57; --amber:#fca311; --amber2:#ffd27a;
+  --bg:#f3f4f8; --card:#ffffff; --ink:#1b1f2a; --muted:#6b7280; --line:#e2e5ee;
+  --sel:#e8f5ec; --selb:#2e9e5b; --warn:#fff4e0; --warnb:#e08a00;
+  --r1:#f59e0b; --r2:#3b82f6; --r3:#10b981; --r4:#8b5cf6; --r5:#ef4444; --r6:#ec4899; --r7:#0ea5e9;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{font-size:18px}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+button{font:inherit;cursor:pointer}
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;padding:env(safe-area-inset-top) 0 0}
+.hwrap{max-width:600px;margin:0 auto;padding:10px 14px 0}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.brand h1{font-size:20px;margin:0;font-weight:700;letter-spacing:.2px;line-height:1.2}
+.brand h1 small{display:block;font-weight:400;font-size:14px;opacity:.75;margin-top:2px}
+.hbtns{display:flex;gap:6px}
+.hbtn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:12px;padding:10px 12px;font-size:16px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.hbtn:hover{background:rgba(255,255,255,.2)}
+.hbtn svg{width:22px;height:22px}
+.views{display:flex;gap:4px;margin-top:10px;background:rgba(0,0,0,.25);padding:4px;border-radius:12px}
+.views button{flex:1;background:transparent;border:0;color:rgba(255,255,255,.8);padding:11px 6px;border-radius:9px;font-size:17px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px}
+.views button.on{background:#fff;color:var(--navy)}
+.views .cnt{background:var(--amber);color:var(--navy);border-radius:999px;font-size:14px;padding:2px 9px;font-weight:800}
+.days{display:flex;gap:6px;margin:10px 0 0;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.days button{flex:1;min-width:92px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:10px;padding:7px 8px;text-align:left;line-height:1.15}
+.days button .d1{font-size:18px;font-weight:700}
+.days button .d2{font-size:13px;opacity:.75;display:block}
+.days button.on{background:var(--amber);border-color:var(--amber);color:var(--navy)}
+.days button.on .d2{opacity:.85}
+.days button .n{display:inline-block;margin-left:5px;font-size:13px;background:rgba(0,0,0,.18);padding:0 6px;border-radius:999px;font-weight:700}
+.tools{max-width:600px;margin:0 auto;padding:12px 14px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.search{flex:1;min-width:200px;position:relative}
+.search input{width:100%;padding:12px 40px 12px 42px;border-radius:12px;border:1px solid var(--line);background:#fff;font-size:17px;outline:none}
+.search input:focus{border-color:var(--navy2);box-shadow:0 0 0 3px rgba(31,47,87,.12)}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:22px;height:22px;color:var(--muted)}
+.search .x{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:var(--muted);font-size:18px;padding:4px 8px;display:none}
+.search.has .x{display:block}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 14px;font-size:16px;color:var(--ink);display:flex;align-items:center;gap:6px}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+main{overflow-x:hidden;max-width:600px;margin:0 auto;padding:12px 14px 90px}
+.hint{font-size:15px;color:var(--muted);margin:2px 0 10px}
+.slot{margin:0 0 14px}
+.slot-h{display:flex;align-items:baseline;gap:10px;margin:0 0 8px;position:sticky;top:0;z-index:5}
+.slot-h .t{font-weight:800;font-size:19px;color:var(--navy);background:var(--bg);padding:6px 0}
+.slot-h .l{height:1px;flex:1;background:var(--line)}
+.slot-h .k{font-size:14px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.card{min-width:0;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 12px;position:relative;box-shadow:0 1px 2px rgba(20,33,61,.04);transition:box-shadow .15s,border-color .15s;display:flex;flex-direction:column;gap:6px}
+.card:hover{box-shadow:0 4px 14px rgba(20,33,61,.08)}
+.card.sel{background:var(--sel);border-color:var(--selb);box-shadow:0 0 0 1px var(--selb) inset}
+.card.sel.conf{background:var(--warn);border-color:var(--warnb);box-shadow:0 0 0 1px var(--warnb) inset}
+.card.dim{opacity:.38}
+.card .top{display:flex;align-items:center;gap:8px;min-width:0}
+.room{font-size:13px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:4px 9px;border-radius:7px;color:#fff;background:var(--rc,#64748b)}
+.till{font-size:13px;color:var(--muted);flex:none;white-space:nowrap;margin-right:44px}
+.kind{font-size:14px;color:var(--muted);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card h3{overflow-wrap:anywhere;margin:0;font-size:19px;line-height:1.3;font-weight:700;padding-right:46px}
+.card .desc{font-size:15px;color:var(--muted);line-height:1.4;margin:0}
+.pick{position:absolute;top:12px;right:12px;width:42px;height:42px;border-radius:50%;border:2px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;color:transparent;transition:all .15s}
+.pick svg{width:22px;height:22px}
+.card.sel .pick{background:var(--selb);border-color:var(--selb);color:#fff}
+.card.sel.conf .pick{background:var(--warnb);border-color:var(--warnb)}
+.card:hover .pick{border-color:var(--selb);color:var(--selb)}
+.card.sel:hover .pick{color:#fff}
+.conf-tag{font-size:14px;font-weight:700;color:var(--warnb);display:none;align-items:center;gap:4px}
+.card.conf .conf-tag{display:flex}
+.more{align-self:flex-start;border:0;background:transparent;color:var(--navy2);font-size:16px;font-weight:600;padding:6px 0;display:flex;align-items:center;gap:4px}
+.more svg{width:18px;height:18px;transition:transform .15s}
+.card.open .more svg{transform:rotate(180deg)}
+.det{display:none;border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
+.card.open .det{display:block}
+.sub{margin:0 0 8px}
+.sub .st{font-size:16px;font-weight:600;line-height:1.35}
+.sub .sp{font-size:15px;color:var(--muted);line-height:1.4}
+.sub .sp b{font-weight:600;color:var(--ink)}
+.sub .sp .rl{font-size:13px;color:var(--muted)}
+.plen{background:linear-gradient(90deg,#fff8e6,#fff);border:1px solid #f3dca0;border-left:5px solid var(--amber);border-radius:var(--radius);padding:10px 12px;display:flex;align-items:center;gap:10px;position:relative}
+.plen .pt{font-size:13px;font-weight:800;color:#8a5a00;text-transform:uppercase;letter-spacing:.4px}
+.plen .pk{font-weight:700;font-size:17px;color:var(--ink)}
+.plen .pd{font-size:15px;color:var(--muted);margin-top:2px}
+.plen .pbody{flex:1;min-width:0}
+.plen .pick{position:static;flex:none}
+.plen.sel{background:var(--sel);border-color:var(--selb)}
+.plen.sel .pick{background:var(--selb);border-color:var(--selb);color:#fff}
+.plen.dim{opacity:.38}
+.plen .sublist{margin:6px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+.plen .sublist li{margin:2px 0}
+.plen .sp{font-size:15px;color:var(--muted);margin-top:3px}
+.plen .sp b{color:var(--ink);font-weight:600}
+.empty{padding:40px 16px;text-align:center;color:var(--muted);font-size:17px;line-height:1.5}
+.empty b{color:var(--ink)}
+/* agenda */
+.ag-day{margin:0 0 22px}
+.ag-day h2{font-size:21px;margin:0 0 10px;color:var(--navy);display:flex;align-items:baseline;gap:8px}
+.ag-day h2 small{font-size:15px;color:var(--muted);font-weight:500}
+.ag{display:flex;gap:12px;align-items:stretch;margin:0 0 8px}
+.ag .time{flex:none;width:62px;text-align:right;padding-top:11px}
+.ag .time b{display:block;font-size:17px;color:var(--navy)}
+.ag .time span{font-size:13px;color:var(--muted)}
+.ag .body{flex:1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;position:relative;min-width:0}
+.ag.gen .body{background:#fbfbfd;border-style:dashed}
+.ag .body h4{margin:2px 0 4px;font-size:18px;line-height:1.3;padding-right:36px}
+.ag.gen .body h4{color:var(--muted);font-weight:600}
+.ag .meta{font-size:14px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ag .meta .room{font-size:12px}
+.ag.conf .body{border-color:var(--warnb);background:var(--warn)}
+.ag .rm{position:absolute;right:8px;top:8px;border:0;background:transparent;color:var(--muted);font-size:24px;line-height:1;padding:4px 6px;border-radius:8px}
+.ag .rm:hover{background:#eee;color:#c00}
+.ag .sp{font-size:15px;color:var(--muted);margin-top:4px;line-height:1.4}
+.ag .sp b{color:var(--ink);font-weight:600}
+.ag-tools{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.btn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 14px;font-size:16px;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:7px}
+.btn svg{width:20px;height:20px}
+.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.danger{color:#b00020}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 18px;border-radius:12px;font-size:16px;opacity:0;transition:all .2s;z-index:50;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+footer{max-width:600px;margin:0 auto;padding:0 14px 30px;font-size:14px;color:var(--muted);text-align:center;line-height:1.5}
+footer a{color:var(--navy2)}
+mark{background:#fff1b8;padding:0 1px;border-radius:2px}
+.brand h1 small{display:none}.hbtn span{display:none}.hbtn{padding:9px}
+
+.inst{display:none;align-items:flex-start;gap:12px;background:var(--navy);color:#fff;border-radius:16px;padding:14px 14px;margin:0 0 14px;position:relative;line-height:1.4}
+.inst.show{display:flex}
+.inst img{width:52px;height:52px;border-radius:12px;flex:none}
+.inst b{display:block;font-size:16px;margin-bottom:3px}
+.inst p{margin:0;font-size:14.5px;color:rgba(255,255,255,.88)}
+.inst p em{font-style:normal;background:rgba(255,255,255,.14);padding:1px 6px;border-radius:6px;white-space:nowrap}
+.inst .x{position:absolute;top:6px;right:6px;border:0;background:transparent;color:#fff;font-size:22px;padding:4px 8px;opacity:.7}
+.inst .go{margin-top:8px;display:inline-block;background:var(--amber);color:var(--navy);font-weight:800;border:0;border-radius:999px;padding:8px 14px;font-size:15px}
+/* Anúncio Clínica Alberto Lima (estilo perfil do Instagram) */
+.ad{display:block;background:#fff;border:1px solid #e3e6ee;border-radius:18px;padding:14px 14px 14px;margin:0 0 14px;text-decoration:none;color:#1b1f2a;position:relative;overflow:hidden}
+.ad:active{transform:scale(.995)}
+.ad .row{display:flex;align-items:center;gap:14px}
+.ad .av{flex:none;width:78px;height:78px;border-radius:50%;padding:3px;background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)}
+.ad .av img{display:block;width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:#fff;object-fit:cover}
+.ad .who{flex:1;min-width:0}
+.ad .handle{font-size:17px;font-weight:800;letter-spacing:-.2px;margin:0;display:flex;align-items:center;gap:5px}
+.ad .handle svg{width:16px;height:16px;color:#0095f6;flex:none}
+.ad .name{font-size:13.5px;color:#6b7280;margin:1px 0 0}
+.ad .stats{display:flex;gap:14px;margin:6px 0 0;font-size:13px;color:#374151}
+.ad .stats b{font-weight:800;color:#1b1f2a}
+.ad .bio{margin:10px 0 0;font-size:14px;line-height:1.45;color:#1b1f2a}
+.ad .bio span{display:block}
+.ad .follow{display:block;margin:12px 0 0;background:#0095f6;color:#fff;text-align:center;font-weight:800;font-size:15px;border-radius:10px;padding:11px 14px}
+@media print{
+  header,.tools,.ag-tools,.btn,.rm,footer,.toast,.ad,.inst{display:none!important}
+  main{padding:0;max-width:none}
+  body{background:#fff}
+  .ag .body{border-color:#bbb}
+  .ag-day{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <div class="brand">
+      <h1>Minha grade Pediatria CE 2026<small>20º Congresso Cearense de Pediatria · Fortaleza</small></h1>
+      <div class="hbtns">
+        <button class="hbtn" id="btnShare" title="Compartilhar minha agenda">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          <span class="hide-sm">Compartilhar</span>
+        </button>
+      </div>
+    </div>
+    <div class="views">
+      <button id="vGrade" class="on">Grade completa</button>
+      <button id="vAgenda">Minha agenda <span class="cnt" id="cnt">0</span></button>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+</header>
+
+<div class="tools" id="tools">
+  <div class="search" id="searchWrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Buscar tema, palestrante, sala…" autocomplete="off">
+    <button class="x" id="qx" aria-label="Limpar">×</button>
+  </div>
+</div>
+
+<div class="inst" id="inst"><img src="apple-touch-icon.png" alt=""><div><b>Salve como app na tela de início</b><p id="instTxt"></p><button class="go" id="instGo" style="display:none">Instalar</button></div><button class="x" id="instX" aria-label="Fechar">×</button></div>
+<main id="main"></main>
+
+<footer>
+  Programação extraída do site oficial em 12/11/2026. Confira sempre o site do congresso para alterações de última hora.<br>
+  Sua seleção fica salva neste navegador. Use <b>Compartilhar</b> para enviar sua agenda a colegas.
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script id="calavatar" type="text/plain">data:image/jpeg;base64,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</script>
+<script id="data" type="application/json">{"days": [{"date": "2026-11-11", "dow": "Qua", "label": "11/11", "note": "Pré-congresso", "rooms": ["Auditório Pedro Borges", "Manoel Veras", "Sávio Parente"]}, {"date": "2026-11-12", "dow": "Qui", "label": "12/11", "note": "", "rooms": ["Sala Rebouças", "Sala 5", "Sala 5.1", "Sala 6", "Sala 7", "Sala 8"]}, {"date": "2026-11-13", "dow": "Sex", "label": "13/11", "note": "", "rooms": ["Sala Rebouças", "Sala 5", "Sala 6", "Sala 7", "Sala 8"]}], "roomfull": {"Sala Rebouças": "Sala Luiz Carlos Rebouças", "Sala 5": "Sala 5 (Dra. Afonsina Aquino)", "Sala 5.1": "Sala 5.1 (Dra. Irene Vilar)", "Sala 6": "Sala 6 (Graça Fagundes): Consultório", "Sala 7": "Sala 7 (Luiza Vieira): Subespecialidades", "Sala 8": "Sala 8 (Alberto Lima): Neonatologia"}, "sessions": [{"id": 1, "date": "2026-11-11", "ini": "08:00", "fim": "12:00", "room": "Várias salas", "kind": "Pré-congresso", "title": "Workshop primeiros socorros em pediatria", "desc": "Salas: Ana Júlia, Sávio Parente, Brinquedoteca, Recanto Das Siriguelas", "subs": [{"t": "", "sp": [{"n": "Karen Lopes", "r": "Palestrante"}, {"n": "Karen Lopes", "r": "Responsável"}]}]}, {"id": 2, "date": "2026-11-11", "ini": "08:00", "fim": "12:00", "room": "Manoel Veras", "kind": "Pré-congresso", "title": "Workshop hiperbilirrubinemia indireta no período neonatal", "desc": "", "subs": [{"t": "", "sp": [{"n": "Daniele Brandão", "r": "Palestrante"}, {"n": "Daniele Brandão", "r": "Responsável"}]}]}, {"id": 3, "date": "2026-11-11", "ini": "14:00", "fim": "18:00", "room": "Auditório Pedro Borges", "kind": "Pré-congresso", "title": "Workshop administração de surfactante por técnica minimamente invasiva", "desc": "", "subs": [{"t": "", "sp": [{"n": "Walusa Assad", "r": "Palestrante"}, {"n": "Sarah Melgaço", "r": "Palestrante"}]}]}, {"id": 4, "date": "2026-11-11", "ini": "14:00", "fim": "18:00", "room": "Sávio Parente", "kind": "Pré-congresso", "title": "Cearenses em destaque do CBP 2026: Jocileide: Atualizações em Vacinação contra Sarampo | Silvana: Otorrinolaringologia", "desc": "", "subs": [{"t": "", "sp": [{"n": "Jocileide Sales", "r": "Palestrante"}, {"n": "Silvana Coelho", "r": "Palestrante"}]}]}, {"id": 5, "date": "2026-11-12", "ini": "08:00", "fim": "09:00", "room": "Sala Rebouças", "kind": "", "title": "2º encontro das ligas acadêmicas de pediatria", "desc": "", "subs": []}, {"id": 6, "date": "2026-11-12", "ini": "09:30", "fim": "10:00", "room": "Sala Rebouças", "kind": "", "title": "Sustentabilidade e autocuidado: cuidando de você e do planeta", "desc": "", "subs": []}, {"id": 7, "date": "2026-11-12", "ini": "10:00", "fim": "11:00", "room": "Sala Rebouças", "kind": "", "title": "Fórum de humanização", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dr. João Borges", "r": "Responsável"}, {"n": "Dra. Anamaria Cavalcante", "r": "Responsável"}]}]}, {"id": 8, "date": "2026-11-12", "ini": "14:00", "fim": "16:00", "room": "Sala Rebouças", "kind": "", "title": "Reunião CEREM x COREMES x MS", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dr. Rodrigo Cariri", "r": "Palestrante"}, {"n": "Dra. Alcilea Leite", "r": "Presidente"}]}]}, {"id": 9, "date": "2026-11-12", "ini": "08:00", "fim": "08:20", "room": "Sala 5", "kind": "", "title": "Abertura", "desc": "", "subs": [{"t": "", "sp": [{"n": "João Osmiro Barreto", "r": "Coordenador"}]}]}, {"id": 10, "date": "2026-11-12", "ini": "08:20", "fim": "09:00", "room": "Sala 5", "kind": "Colóquio 1", "title": "Desenvolvimento Infantil: como avaliar, reconhecer sinais de alerta e decidir por uma investigação diagnóstica", "desc": "", "subs": [{"t": "", "sp": [{"n": "Sulivan Mota (UFC)", "r": "Palestrante"}, {"n": "Rosa Resegue (SP)", "r": "Palestrante"}, {"n": "Iracema Kacya Sousa Lima", "r": "Moderadora"}, {"n": "João Osmiro Barreto", "r": "Coordenador"}]}]}, {"id": 11, "date": "2026-11-12", "ini": "09:10", "fim": "09:30", "room": "Sala 5", "kind": "Colóquio 2", "title": "Quando suspeitar de que as alterações no comportamento podem significar transtornos?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Renata Kehdi", "r": "Palestrante"}, {"n": "Ana Beatriz Ferreira de Araújo", "r": "Moderadora"}, {"n": "Álvaro Leite", "r": "Coordenador"}]}]}, {"id": 12, "date": "2026-11-12", "ini": "09:30", "fim": "09:50", "room": "Sala 5", "kind": "Colóquio 2", "title": "Como compreender a psicopatologia nos primeiros anos de vida?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Renata Bruno", "r": "Palestrante"}, {"n": "Ana Beatriz Ferreira de Araújo", "r": "Moderadora"}, {"n": "Álvaro Leite", "r": "Coordenador"}]}]}, {"id": 13, "date": "2026-11-12", "ini": "09:50", "fim": "10:10", "room": "Sala 5", "kind": "Colóquio 2", "title": "Princípios do manejo terapêutico", "desc": "", "subs": [{"t": "", "sp": [{"n": "Pedro Reis", "r": "Palestrante"}, {"n": "Ana Beatriz Ferreira de Araújo", "r": "Moderadora"}, {"n": "Álvaro Leite", "r": "Coordenador"}]}]}, {"id": 14, "date": "2026-11-12", "ini": "10:30", "fim": "11:10", "room": "Sala 5", "kind": "Conferência 1", "title": "Transtorno do espectro Autista: como as evidências podem nos ajudar a definir o tratamento", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rosa Resegue (SP)", "r": "Palestrante"}, {"n": "Larissa Manuele Plácido Diogenes", "r": "Moderadora"}]}]}, {"id": 15, "date": "2026-11-12", "ini": "11:10", "fim": "11:30", "room": "Sala 5", "kind": "Conferência 2", "title": "Quando a vida da criança se torna imprevisível: o impacto do ambiente sobre o cérebro em desenvolvimento", "desc": "", "subs": [{"t": "", "sp": [{"n": "Álvaro Madeiro", "r": "Palestrante"}, {"n": "Laís Macambira Pinto Debortoli", "r": "Moderadora"}]}]}, {"id": 16, "date": "2026-11-12", "ini": "13:30", "fim": "13:50", "room": "Sala 5", "kind": "Crescer e prosperar apesar das adversidades: o que protege o desenvolvimento infantill?", "title": "Parentalidade", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rosa Resegue (SP)", "r": "Palestrante"}, {"n": "Tereza Beatriz Ramos Colares", "r": "Moderadora"}]}]}, {"id": 17, "date": "2026-11-12", "ini": "13:50", "fim": "14:10", "room": "Sala 5", "kind": "Crescer e prosperar apesar das adversidades: o que protege o desenvolvimento infantill?", "title": "Cuidados Responsivos", "desc": "", "subs": [{"t": "", "sp": [{"n": "Paulinne Hellen Assunção", "r": "Palestrante"}, {"n": "Tereza Beatriz Ramos Colares", "r": "Moderadora"}]}]}, {"id": 18, "date": "2026-11-12", "ini": "14:10", "fim": "14:30", "room": "Sala 5", "kind": "Crescer e prosperar apesar das adversidades: o que protege o desenvolvimento infantill?", "title": "Cuidado em contextos de adversidades", "desc": "", "subs": [{"t": "", "sp": [{"n": "Renata Bruno", "r": "Palestrante"}, {"n": "Tereza Beatriz Ramos Colares", "r": "Moderadora"}]}]}, {"id": 19, "date": "2026-11-12", "ini": "15:00", "fim": "15:30", "room": "*", "kind": "Conferência", "title": "Conferência Dr. Tadeu Fernandes (SBP)", "desc": "Transmitida para todas as salas", "subs": [{"t": "", "sp": [{"n": "Dr. Tadeu Fernandes (SBP)", "r": "Conferencista"}]}]}, {"id": 20, "date": "2026-11-12", "ini": "15:30", "fim": "16:00", "room": "*", "kind": "Abertura oficial do congresso", "title": "Na Sala Luiza Vieira (Sala 7)", "desc": "", "subs": []}, {"id": 21, "date": "2026-11-12", "ini": "16:00", "fim": "16:40", "room": "Sala 5", "kind": "Colóquio 4", "title": "O pediatra e a atenção à criança com autismo", "desc": "", "subs": [{"t": "", "sp": [{"n": "José Leandro", "r": "Palestrante"}, {"n": "Renata Kehdi", "r": "Palestrante"}, {"n": "Magda Paula Gomes Garcia", "r": "Moderadora"}]}]}, {"id": 22, "date": "2026-11-12", "ini": "16:50", "fim": "18:00", "room": "Sala 5", "kind": "Doutor, isso é normal?: três queixas relacionadas ao desenvolvimento que desafiam o pediatra no consultório", "title": "Meu filho não dorme: quando o sono se torna um problema de desenvolvimento?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Patrícia Lobo", "r": "Palestrante"}, {"n": "Marilia Gersoni Bastos Reis Gomes", "r": "Moderadora"}]}]}, {"id": 23, "date": "2026-11-12", "ini": "16:50", "fim": "18:00", "room": "Sala 5", "kind": "Doutor, isso é normal?: três queixas relacionadas ao desenvolvimento que desafiam o pediatra no consultório", "title": "Ele explode por tudo: como compreender a irritabilidade na infância?", "desc": "", "subs": [{"t": "", "sp": [{"n": "André Manganelli", "r": "Palestrante"}, {"n": "Marilia Gersoni Bastos Reis Gomes", "r": "Moderadora"}]}]}, {"id": 24, "date": "2026-11-12", "ini": "16:50", "fim": "18:00", "room": "Sala 5", "kind": "Doutor, isso é normal?: três queixas relacionadas ao desenvolvimento que desafiam o pediatra no consultório", "title": "Meu filho ainda não fala: quando esperar e quando investigar?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Renata Bruno", "r": "Palestrante"}, {"n": "Marilia Gersoni Bastos Reis Gomes", "r": "Moderadora"}]}]}, {"id": 25, "date": "2026-11-12", "ini": "08:00", "fim": "08:35", "room": "Sala 5.1", "kind": "Conferência de abertura", "title": "Iniciativa Hospital Amigo da Criança: avanços, evidências e perspectivas para o fortalecimento do aleitamento materno no Brasil", "desc": "", "subs": [{"t": "", "sp": [{"n": "Bárbara Machado", "r": "Palestrante"}, {"n": "Ronsâgela de Brito Sales", "r": "Presidente"}]}]}, {"id": 26, "date": "2026-11-12", "ini": "08:50", "fim": "09:10", "room": "Sala 5.1", "kind": "", "title": "Estratégias da SESA para implementar a IHAC no Ceará", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rianna Nobre", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 27, "date": "2026-11-12", "ini": "09:10", "fim": "09:30", "room": "Sala 5.1", "kind": "", "title": "Autossuficiência do BLH x Prematuridade", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rejane de Brito Santana Machado", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 28, "date": "2026-11-12", "ini": "10:30", "fim": "10:50", "room": "Sala 5.1", "kind": "Painel de atualização em AM", "title": "Composição do leite materno", "desc": "", "subs": [{"t": "", "sp": [{"n": "Vanuza Chagas Gonçalves", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 29, "date": "2026-11-12", "ini": "10:50", "fim": "11:10", "room": "Sala 5.1", "kind": "Painel de atualização em AM", "title": "IHAC x FI: Alta hospitalar", "desc": "", "subs": [{"t": "", "sp": [{"n": "Maria Sidneuma de Melo Ventura", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 30, "date": "2026-11-12", "ini": "11:10", "fim": "11:30", "room": "Sala 5.1", "kind": "Painel de atualização em AM", "title": "Como manter os Dez Passos na prática hospitalar", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rosy Denyse Pinheiro de Oliveira", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 31, "date": "2026-11-12", "ini": "11:30", "fim": "11:50", "room": "Sala 5.1", "kind": "Painel de atualização em AM", "title": "Cantinho da amamentação: experiência exitosa de 10º passo da IHAC", "desc": "", "subs": [{"t": "", "sp": [{"n": "Marilene Albuquerque Uchoa", "r": "Palestrante"}, {"n": "Diva de Lourdes Azevedo Fernandes", "r": "Presidente"}]}]}, {"id": 32, "date": "2026-11-12", "ini": "14:00", "fim": "15:00", "room": "Sala 5.1", "kind": "", "title": "Workshop em imunização", "desc": "", "subs": [{"t": "", "sp": [{"n": "Surama Elarrati", "r": "Palestrante"}, {"n": "Ana Karine", "r": "Palestrante"}, {"n": "Ana Débora", "r": "Palestrante"}, {"n": "Surama Elarrati", "r": "Presidente"}, {"n": "Jocileide Sales", "r": "Presidente"}]}]}, {"id": 33, "date": "2026-11-12", "ini": "14:00", "fim": "14:30", "room": "Sala 5.1", "kind": "", "title": "Atualizações no Calendário de Imunização Infantil", "desc": "", "subs": []}, {"id": 34, "date": "2026-11-12", "ini": "14:30", "fim": "15:00", "room": "Sala 5.1", "kind": "", "title": "Vivência Prática na Sala de Vacina Simulada", "desc": "", "subs": []}, {"id": 35, "date": "2026-11-12", "ini": "08:00", "fim": "08:30", "room": "Sala 6", "kind": "", "title": "Deficiência de biotinidase e fenilcetonúria", "desc": "", "subs": [{"t": "", "sp": [{"n": "Nayana Vidal", "r": "Palestrante"}, {"n": "Erlane Ribeiro", "r": "Presidente"}, {"n": "Wladia Tavares (CARIRI)", "r": "Moderadora"}]}]}, {"id": 36, "date": "2026-11-12", "ini": "08:30", "fim": "09:00", "room": "Sala 6", "kind": "", "title": "Hiperplasia adrenal congênita e hipotireoidismo congênito", "desc": "", "subs": [{"t": "", "sp": [{"n": "Débora Coutinho", "r": "Palestrante"}, {"n": "Erlane Ribeiro", "r": "Presidente"}, {"n": "Wladia Tavares (CARIRI)", "r": "Moderadora"}]}]}, {"id": 37, "date": "2026-11-12", "ini": "10:00", "fim": "10:20", "room": "Sala 6", "kind": "", "title": "Fibrose cística", "desc": "", "subs": [{"t": "", "sp": [{"n": "Evalto Monte", "r": "Palestrante"}, {"n": "Marcia Lima Verde", "r": "Presidente"}, {"n": "Italo Cavalcante (LACEN)", "r": "Moderador"}]}]}, {"id": 38, "date": "2026-11-12", "ini": "10:20", "fim": "10:40", "room": "Sala 6", "kind": "", "title": "Hemoglobinopatias", "desc": "", "subs": [{"t": "", "sp": [{"n": "Artur Moraes", "r": "Palestrante"}, {"n": "Marcia Lima Verde", "r": "Presidente"}, {"n": "Italo Cavalcante (LACEN)", "r": "Moderador"}]}]}, {"id": 39, "date": "2026-11-12", "ini": "10:40", "fim": "11:00", "room": "Sala 6", "kind": "", "title": "Teste do pezinho: perspectivas futuras", "desc": "", "subs": [{"t": "", "sp": [{"n": "Erlane Ribeiro", "r": "Palestrante"}, {"n": "Marcia Lima Verde", "r": "Presidente"}, {"n": "Italo Cavalcante (LACEN)", "r": "Moderador"}]}]}, {"id": 40, "date": "2026-11-12", "ini": "14:00", "fim": "14:20", "room": "Sala 6", "kind": "", "title": "Dor abdominal recorrente na pediatria", "desc": "", "subs": [{"t": "", "sp": [{"n": "Guilherme Lustosa", "r": "Palestrante"}, {"n": "Stefani Dias", "r": "Presidente"}, {"n": "Hildenia Baltazar", "r": "Moderadora"}]}]}, {"id": 41, "date": "2026-11-12", "ini": "14:20", "fim": "14:40", "room": "Sala 6", "kind": "", "title": "Constipação crônica funcional", "desc": "", "subs": [{"t": "", "sp": [{"n": "Amália Maria Porto Lustosa", "r": "Palestrante"}, {"n": "Stefani Dias", "r": "Presidente"}, {"n": "Hildenia Baltazar", "r": "Moderadora"}]}]}, {"id": 42, "date": "2026-11-12", "ini": "16:00", "fim": "16:15", "room": "Sala 6", "kind": "", "title": "Puberdade precoce: o que solicitar antes de encaminhar ao endócrinopediatra", "desc": "", "subs": [{"t": "", "sp": [{"n": "Anelise Barreto", "r": "Palestrante"}, {"n": "Dra. Delia Braz", "r": "Presidente"}, {"n": "Luciana Ferrer", "r": "Moderadora"}]}]}, {"id": 43, "date": "2026-11-12", "ini": "16:15", "fim": "16:30", "room": "Sala 6", "kind": "", "title": "Obesidade e síndrome metabólica na infância", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lívia Martins", "r": "Palestrante"}, {"n": "Dra. Delia Braz", "r": "Presidente"}, {"n": "Luciana Ferrer", "r": "Moderadora"}]}]}, {"id": 44, "date": "2026-11-12", "ini": "16:30", "fim": "16:45", "room": "Sala 6", "kind": "", "title": "Além do peso: cirurgia bariátrica e análogos do GLP-1", "desc": "", "subs": [{"t": "", "sp": [{"n": "Cristiane Leite", "r": "Palestrante"}, {"n": "Dra. Delia Braz", "r": "Presidente"}, {"n": "Luciana Ferrer", "r": "Moderadora"}]}]}, {"id": 45, "date": "2026-11-12", "ini": "08:00", "fim": "08:30", "room": "Sala 7", "kind": "", "title": "Alergia alimentar na infância: como prevenir? Como conduzir?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Janaira Fernandes", "r": "Palestrante"}, {"n": "Monizi Campelo Gomes", "r": "Presidente"}, {"n": "Edine Pimentel", "r": "Moderadora"}]}]}, {"id": 46, "date": "2026-11-12", "ini": "08:30", "fim": "09:00", "room": "Sala 7", "kind": "", "title": "Urticária na infância é sempre um sinal de alergia?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Kaila Medeiros", "r": "Palestrante"}, {"n": "Paula Albuquerque", "r": "Palestrante"}, {"n": "Monizi Campelo Gomes", "r": "Presidente"}, {"n": "Edine Pimentel", "r": "Moderadora"}]}]}, {"id": 47, "date": "2026-11-12", "ini": "10:00", "fim": "10:20", "room": "Sala 7", "kind": "", "title": "O cuidado respiratório da criança com prematuridade extrema", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lorena Pinheiro", "r": "Palestrante"}, {"n": "Ana Júlia", "r": "Presidente"}, {"n": "Ângela Holanda", "r": "Moderadora"}]}]}, {"id": 48, "date": "2026-11-12", "ini": "10:20", "fim": "10:40", "room": "Sala 7", "kind": "", "title": "Desafios do consultório: pré-escolar sibilante", "desc": "", "subs": [{"t": "", "sp": [{"n": "Sawana Sampaio Mesquita", "r": "Palestrante"}, {"n": "Ana Júlia", "r": "Presidente"}, {"n": "Ângela Holanda", "r": "Moderadora"}]}]}, {"id": 49, "date": "2026-11-12", "ini": "10:40", "fim": "11:00", "room": "Sala 7", "kind": "", "title": "Desafios do consultório: tosse crônica e tosse recorrente", "desc": "", "subs": [{"t": "", "sp": [{"n": "Carolina Arcanjo", "r": "Palestrante"}, {"n": "Ana Júlia", "r": "Presidente"}, {"n": "Ângela Holanda", "r": "Moderadora"}]}]}, {"id": 50, "date": "2026-11-12", "ini": "12:00", "fim": "14:00", "room": "Sala 7", "kind": "Simpósio satélite EMS", "title": "Muito além da diarreia: o papel dos probióticos na saúde intestinal e imunológica da criança: Dr. Tadeu Fernandes", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dr. Tadeu Fernandes", "r": "Palestrante"}]}]}, {"id": 51, "date": "2026-11-12", "ini": "14:00", "fim": "14:20", "room": "Sala 7", "kind": "", "title": "Investigando meu paciente com B12 ou ferritina elevadas", "desc": "", "subs": [{"t": "", "sp": [{"n": "Artur Moraes", "r": "Palestrante"}, {"n": "Luiza Lins", "r": "Presidente"}, {"n": "Racquel Reis", "r": "Moderadora"}]}]}, {"id": 52, "date": "2026-11-12", "ini": "14:20", "fim": "14:40", "room": "Sala 7", "kind": "", "title": "Citopenias na infância: quando devo me preocupar?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Alex Monteiro", "r": "Palestrante"}, {"n": "Luiza Lins", "r": "Presidente"}, {"n": "Racquel Reis", "r": "Moderadora"}]}]}, {"id": 53, "date": "2026-11-12", "ini": "16:00", "fim": "16:30", "room": "Sala 7", "kind": "", "title": "Laser na pediatria: indicações e perspectivas futuras", "desc": "", "subs": [{"t": "", "sp": [{"n": "Cryslany Portela", "r": "Palestrante"}, {"n": "Cristiana Rôla (HIAS)", "r": "Presidente"}, {"n": "Flora Mére (HIAS)", "r": "Moderadora"}]}]}, {"id": 54, "date": "2026-11-12", "ini": "16:30", "fim": "17:00", "room": "Sala 7", "kind": "", "title": "Doenças infecciosas e a aplicabilidade do laser", "desc": "", "subs": [{"t": "", "sp": [{"n": "Nerci Ciarlini", "r": "Palestrante"}, {"n": "Cristiana Rôla (HIAS)", "r": "Presidente"}, {"n": "Flora Mére (HIAS)", "r": "Moderadora"}]}]}, {"id": 55, "date": "2026-11-12", "ini": "08:00", "fim": "08:20", "room": "Sala 8", "kind": "", "title": "Geração Z & residência médica: como facilitar o processo ensino-aprendizado", "desc": "", "subs": [{"t": "", "sp": [{"n": "Virna Costa Silva", "r": "Palestrante"}, {"n": "Alcilea Leite", "r": "Presidente"}, {"n": "Rivianny Arrais", "r": "Moderadora"}]}]}, {"id": 56, "date": "2026-11-12", "ini": "08:20", "fim": "08:40", "room": "Sala 8", "kind": "", "title": "Limites da atuação do preceptor no reconhecimento e manejo da depressão e do burnout na residência", "desc": "", "subs": [{"t": "", "sp": [{"n": "Jordan Prazeres", "r": "Palestrante"}, {"n": "Alcilea Leite", "r": "Presidente"}, {"n": "Rivianny Arrais", "r": "Moderadora"}]}]}, {"id": 57, "date": "2026-11-12", "ini": "08:40", "fim": "09:00", "room": "Sala 8", "kind": "", "title": "Residência médica em pediatria e neonatologia: o que o futuro nos reserva", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rodrigo Cariri", "r": "Palestrante"}, {"n": "Alcilea Leite", "r": "Presidente"}, {"n": "Rivianny Arrais", "r": "Moderadora"}]}]}, {"id": 58, "date": "2026-11-12", "ini": "10:00", "fim": "10:30", "room": "Sala 8", "kind": "", "title": "Princípios da pesquisa científica: facilitando o processo para o residente", "desc": "", "subs": [{"t": "", "sp": [{"n": "Mônica Belém", "r": "Palestrante"}, {"n": "Olívia Bessa", "r": "Presidente"}, {"n": "Keny Colares", "r": "Moderador"}]}]}, {"id": 59, "date": "2026-11-12", "ini": "10:30", "fim": "11:00", "room": "Sala 8", "kind": "", "title": "Uso da inteligência artificial como ferramenta de ensino e pesquisa", "desc": "", "subs": [{"t": "", "sp": [{"n": "Henrique Sá", "r": "Palestrante"}, {"n": "Olívia Bessa", "r": "Presidente"}, {"n": "Keny Colares", "r": "Moderador"}]}]}, {"id": 60, "date": "2026-11-12", "ini": "12:00", "fim": "14:00", "room": "Sala 8", "kind": "Simpósio satélite Chiesi", "title": "Atualizações no Manejo da SDR", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dra. Walusa Assad", "r": "Palestrante"}]}]}, {"id": 61, "date": "2026-11-12", "ini": "14:00", "fim": "14:20", "room": "Sala 8", "kind": "", "title": "Colestase neonatal: investigação e manejo", "desc": "", "subs": [{"t": "", "sp": [{"n": "Júlia Teixeira", "r": "Palestrante"}, {"n": "Maylla Moura Araújo", "r": "Presidente"}, {"n": "Edna Marques", "r": "Moderadora"}]}]}, {"id": 62, "date": "2026-11-12", "ini": "14:20", "fim": "14:40", "room": "Sala 8", "kind": "", "title": "Erros inatos do metabolismo: quando pensar? Como triar?", "desc": "", "subs": [{"t": "", "sp": [{"n": "François Ponte", "r": "Palestrante"}, {"n": "Maylla Moura Araújo", "r": "Presidente"}, {"n": "Edna Marques", "r": "Moderadora"}]}]}, {"id": 63, "date": "2026-11-12", "ini": "16:00", "fim": "16:30", "room": "Sala 8", "kind": "", "title": "Enterocolite necrotizante: do temor do diagnóstico ao terror do tratamento", "desc": "", "subs": [{"t": "", "sp": [{"n": "Walusa Assad", "r": "Palestrante"}, {"n": "Sarah Melgaço", "r": "Presidente"}, {"n": "Luciana Vieira", "r": "Moderadora"}]}]}, {"id": 64, "date": "2026-11-12", "ini": "16:30", "fim": "17:00", "room": "Sala 8", "kind": "", "title": "Síndrome do intestino curto: repercussões a médio e longo prazo", "desc": "", "subs": [{"t": "", "sp": [{"n": "Mikaelle Marques", "r": "Palestrante"}, {"n": "Sarah Melgaço", "r": "Presidente"}, {"n": "Luciana Vieira", "r": "Moderadora"}]}]}, {"id": 65, "date": "2026-11-13", "ini": "08:00", "fim": "08:20", "room": "Sala Rebouças", "kind": "Encontro de residentes", "title": "Aleitamento Materno à prematuridade", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lilianny Medeiros", "r": "Palestrante"}]}]}, {"id": 66, "date": "2026-11-13", "ini": "08:20", "fim": "08:40", "room": "Sala Rebouças", "kind": "Encontro de residentes", "title": "Atenção à Saúde da Criança Indígena", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lucas Guerra", "r": "Palestrante"}, {"n": "Marisângela Dutra", "r": "Palestrante"}]}]}, {"id": 67, "date": "2026-11-13", "ini": "08:40", "fim": "09:20", "room": "Sala Rebouças", "kind": "Encontro de residentes", "title": "Evolução do Calendário Vacinal no Brasil", "desc": "", "subs": [{"t": "", "sp": [{"n": "Isabella Ballalai", "r": "Palestrante"}]}]}, {"id": 68, "date": "2026-11-13", "ini": "10:00", "fim": "11:00", "room": "Sala Rebouças", "kind": "", "title": "Fórum de humanização", "desc": "", "subs": []}, {"id": 69, "date": "2026-11-13", "ini": "08:00", "fim": "08:20", "room": "Sala 5", "kind": "", "title": "Patologias cirúrgicas ambulatoriais para o pediatra", "desc": "", "subs": [{"t": "", "sp": [{"n": "Jovelino Quintino", "r": "Palestrante"}, {"n": "Ana Larissa Brasil", "r": "Presidente"}, {"n": "Clovis Ney Pinheiro", "r": "Moderador"}]}]}, {"id": 70, "date": "2026-11-13", "ini": "08:30", "fim": "08:40", "room": "Sala 5", "kind": "Mesa: Gastrocirurgia pediátrica: O que o pediatra precisa saber", "title": "Megacólon congênito", "desc": "", "subs": [{"t": "", "sp": [{"n": "Humberto Bia Lima", "r": "Palestrante"}, {"n": "Alice de Lima", "r": "Presidente"}, {"n": "Rocino Marinho", "r": "Moderador"}]}]}, {"id": 71, "date": "2026-11-13", "ini": "08:40", "fim": "08:50", "room": "Sala 5", "kind": "Mesa: Gastrocirurgia pediátrica: O que o pediatra precisa saber", "title": "Atresia das vias biliares", "desc": "", "subs": [{"t": "", "sp": [{"n": "Sergio Oceliano", "r": "Palestrante"}, {"n": "Alice de Lima", "r": "Presidente"}, {"n": "Rocino Marinho", "r": "Moderador"}]}]}, {"id": 72, "date": "2026-11-13", "ini": "08:50", "fim": "09:00", "room": "Sala 5", "kind": "Mesa: Gastrocirurgia pediátrica: O que o pediatra precisa saber", "title": "Manejo de cólon na incontinência fecal", "desc": "", "subs": [{"t": "", "sp": [{"n": "João Henrique", "r": "Palestrante"}, {"n": "Alice de Lima", "r": "Presidente"}, {"n": "Rocino Marinho", "r": "Moderador"}]}]}, {"id": 73, "date": "2026-11-13", "ini": "10:00", "fim": "10:10", "room": "Sala 5", "kind": "Mesa: Atualização em oncocirurgia pediátrica", "title": "Sinais de alerta para tumores abdominais", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lucas Pazollini", "r": "Palestrante"}, {"n": "Valeska Alves", "r": "Presidente"}, {"n": "José Ricardo Barbosa", "r": "Moderador"}]}]}, {"id": 74, "date": "2026-11-13", "ini": "10:10", "fim": "10:20", "room": "Sala 5", "kind": "Mesa: Atualização em oncocirurgia pediátrica", "title": "Tumores geminativos (ovário e testículo)", "desc": "", "subs": [{"t": "", "sp": [{"n": "Mariana Marconato", "r": "Palestrante"}, {"n": "Valeska Alves", "r": "Presidente"}, {"n": "José Ricardo Barbosa", "r": "Moderador"}]}]}, {"id": 75, "date": "2026-11-13", "ini": "10:40", "fim": "10:50", "room": "Sala 5", "kind": "Mesa: Como lidar com", "title": "Gastrostomia", "desc": "", "subs": [{"t": "", "sp": [{"n": "Antonio Aldo", "r": "Palestrante"}, {"n": "Claudio Pinheiro", "r": "Presidente"}, {"n": "Mateus Pimentel", "r": "Moderador"}]}]}, {"id": 76, "date": "2026-11-13", "ini": "10:50", "fim": "11:00", "room": "Sala 5", "kind": "Mesa: Como lidar com", "title": "Traqueostomia", "desc": "", "subs": [{"t": "", "sp": [{"n": "Monika Maya Tsuji", "r": "Palestrante"}, {"n": "Claudio Pinheiro", "r": "Presidente"}, {"n": "Mateus Pimentel", "r": "Moderador"}]}]}, {"id": 77, "date": "2026-11-13", "ini": "11:00", "fim": "11:10", "room": "Sala 5", "kind": "Mesa: Como lidar com", "title": "Dreno de tórax", "desc": "", "subs": [{"t": "", "sp": [{"n": "Mariana Castelo", "r": "Palestrante"}, {"n": "Claudio Pinheiro", "r": "Presidente"}, {"n": "Mateus Pimentel", "r": "Moderador"}]}]}, {"id": 78, "date": "2026-11-13", "ini": "11:30", "fim": "11:50", "room": "Sala 5", "kind": "", "title": "Anestesia pediátrica para o pediatra", "desc": "", "subs": [{"t": "", "sp": [{"n": "Laura Alencar", "r": "Palestrante"}, {"n": "Paula Louise", "r": "Presidente"}, {"n": "Ricardo Falcão", "r": "Moderador"}]}]}, {"id": 79, "date": "2026-11-13", "ini": "14:00", "fim": "14:20", "room": "Sala 5", "kind": "", "title": "Patologias cirúrgicas emergenciais para o pediatra", "desc": "", "subs": [{"t": "", "sp": [{"n": "Augusto César Gadelha", "r": "Palestrante"}, {"n": "Flaviany Maria Santiago", "r": "Presidente"}, {"n": "Maria do Socorro", "r": "Moderadora"}]}]}, {"id": 80, "date": "2026-11-13", "ini": "14:30", "fim": "14:40", "room": "Sala 5", "kind": "Mesa: Atualizações em urologia pediátricas", "title": "Hidronefrose na criança", "desc": "", "subs": [{"t": "", "sp": [{"n": "Manoel Luiz Figueira", "r": "Palestrante"}, {"n": "Joyce Carole Bezerra", "r": "Presidente"}, {"n": "Rogério Cruz", "r": "Moderador"}]}]}, {"id": 81, "date": "2026-11-13", "ini": "14:40", "fim": "14:50", "room": "Sala 5", "kind": "Mesa: Atualizações em urologia pediátricas", "title": "Patologias penais (micropênis, pênis embutido, hipospádia)", "desc": "", "subs": [{"t": "", "sp": [{"n": "Jovelino", "r": "Palestrante"}, {"n": "Joyce Carole Bezerra", "r": "Presidente"}, {"n": "Rogério Cruz", "r": "Moderador"}]}]}, {"id": 82, "date": "2026-11-13", "ini": "14:50", "fim": "15:00", "room": "Sala 5", "kind": "Mesa: Atualizações em urologia pediátricas", "title": "Litíase urinária na criança", "desc": "", "subs": [{"t": "", "sp": [{"n": "Patricia Maria Figueiredo", "r": "Palestrante"}, {"n": "Joyce Carole Bezerra", "r": "Presidente"}, {"n": "Rogério Cruz", "r": "Moderador"}]}]}, {"id": 83, "date": "2026-11-13", "ini": "16:00", "fim": "16:10", "room": "Sala 5", "kind": "Mesa: Cirurgia neonatal", "title": "Abdome agudo no RN", "desc": "", "subs": [{"t": "", "sp": [{"n": "Daniel Reis", "r": "Palestrante"}, {"n": "Barbara de Oliveira", "r": "Presidente"}, {"n": "Augusto", "r": "Moderador"}]}]}, {"id": 84, "date": "2026-11-13", "ini": "16:10", "fim": "16:20", "room": "Sala 5", "kind": "Mesa: Cirurgia neonatal", "title": "Gastrosquise x onfalocele", "desc": "", "subs": [{"t": "", "sp": [{"n": "José Albuquerque Landim", "r": "Palestrante"}, {"n": "Barbara de Oliveira", "r": "Presidente"}, {"n": "Augusto", "r": "Moderador"}]}]}, {"id": 85, "date": "2026-11-13", "ini": "16:20", "fim": "16:30", "room": "Sala 5", "kind": "Mesa: Cirurgia neonatal", "title": "Genitália ambígua, quando suspeitar e o que fazer", "desc": "", "subs": [{"t": "", "sp": [{"n": "Jovelino", "r": "Palestrante"}, {"n": "Barbara de Oliveira", "r": "Presidente"}, {"n": "Augusto", "r": "Moderador"}]}]}, {"id": 86, "date": "2026-11-13", "ini": "17:00", "fim": "17:20", "room": "Sala 5", "kind": "", "title": "O futuro da cirurgia pediátrica: Fetal e vídeo x robô", "desc": "", "subs": [{"t": "", "sp": [{"n": "Aldo Melo", "r": "Palestrante"}, {"n": "João Marcelo Matos", "r": "Presidente"}, {"n": "Jovelino", "r": "Moderador"}]}]}, {"id": 87, "date": "2026-11-13", "ini": "08:00", "fim": "08:20", "room": "Sala 6", "kind": "", "title": "Vírus sincicial respiratório: impacto da vacinação na gestante (VSR)", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lara Maia", "r": "Palestrante"}, {"n": "Socorro Alcântara", "r": "Presidente"}, {"n": "Jocileide Sales (SOCEP)", "r": "Moderadora"}]}]}, {"id": 88, "date": "2026-11-13", "ini": "08:20", "fim": "08:40", "room": "Sala 6", "kind": "", "title": "Cenário epidemiológico das doenças invasivas e a imunização", "desc": "", "subs": [{"t": "", "sp": [{"n": "Ana Karine", "r": "Palestrante"}, {"n": "Socorro Alcântara", "r": "Presidente"}, {"n": "Jocileide Sales (SOCEP)", "r": "Moderadora"}]}]}, {"id": 89, "date": "2026-11-13", "ini": "08:40", "fim": "09:00", "room": "Sala 6", "kind": "", "title": "Introdução da Pneumo 20 no calendário nacional", "desc": "", "subs": [{"t": "", "sp": [{"n": "Surama Elarrat", "r": "Palestrante"}, {"n": "Socorro Alcântara", "r": "Presidente"}, {"n": "Jocileide Sales (SOCEP)", "r": "Moderadora"}]}]}, {"id": 90, "date": "2026-11-13", "ini": "10:00", "fim": "10:20", "room": "Sala 6", "kind": "", "title": "Vacinação contra dengue no Brasil: Como estamos?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Luis Carlos Rey", "r": "Palestrante"}, {"n": "João Claudio (Núbia Jacó)", "r": "Presidente"}, {"n": "Lohanna Tavares (HSJ)", "r": "Moderadora"}]}]}, {"id": 91, "date": "2026-11-13", "ini": "10:20", "fim": "10:40", "room": "Sala 6", "kind": "", "title": "Retorno do sarampo ao Brasil: Como evitar?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Robério Dias Leite", "r": "Palestrante"}, {"n": "João Claudio (Núbia Jacó)", "r": "Presidente"}, {"n": "Lohanna Tavares (HSJ)", "r": "Moderadora"}]}]}, {"id": 92, "date": "2026-11-13", "ini": "10:40", "fim": "11:00", "room": "Sala 6", "kind": "", "title": "Exame PCR multiplex", "desc": "", "subs": [{"t": "", "sp": [{"n": "Caroline Nunes", "r": "Palestrante"}, {"n": "João Claudio (Núbia Jacó)", "r": "Presidente"}, {"n": "Lohanna Tavares (HSJ)", "r": "Moderadora"}]}]}, {"id": 93, "date": "2026-11-13", "ini": "11:30", "fim": "12:30", "room": "Sala 6", "kind": "Conferência Pfizer", "title": "Protegendo o futuro: impacto das vacinas pneumocócicas na redução de morbimortalidade infantil no Brasil", "desc": "", "subs": [{"t": "", "sp": [{"n": "Robério Dias Leite", "r": "Palestrante"}]}]}, {"id": 94, "date": "2026-11-13", "ini": "14:00", "fim": "14:30", "room": "Sala 6", "kind": "Desafios da nova puericultura I", "title": "Atraso no neurodesenvolvimento: reconhecendo os sinais da paralisia cerebral", "desc": "", "subs": [{"t": "", "sp": [{"n": "Adelina Feitosa", "r": "Palestrante"}, {"n": "Nayana Vidal (HGF/HIAS)", "r": "Presidente"}, {"n": "Mayara Fortes", "r": "Moderadora"}]}]}, {"id": 95, "date": "2026-11-13", "ini": "14:30", "fim": "15:00", "room": "Sala 6", "kind": "Desafios da nova puericultura II", "title": "Entre o peito e o copo: os desafios da amamentação e da introdução alimentar", "desc": "", "subs": [{"t": "", "sp": [{"n": "Rejane de Brito Santana", "r": "Palestrante"}, {"n": "Nayana Vidal (HGF/HIAS)", "r": "Presidente"}, {"n": "Mayara Fortes", "r": "Moderadora"}]}]}, {"id": 96, "date": "2026-11-13", "ini": "16:00", "fim": "16:30", "room": "Sala 6", "kind": "Desafio da nova puericultura", "title": "Bullying perverso: detecção e condução", "desc": "", "subs": [{"t": "", "sp": [{"n": "Lino Ferreira", "r": "Palestrante"}, {"n": "Nicó Alves (HGF/HIAS)", "r": "Presidente"}, {"n": "Mariana Brasil", "r": "Moderadora"}]}]}, {"id": 97, "date": "2026-11-13", "ini": "16:30", "fim": "17:00", "room": "Sala 6", "kind": "", "title": "Autolesão e suicídio na adolescência: estamos preparados para essa realidade?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Alexandre Aquino", "r": "Palestrante"}, {"n": "Nicó Alves (HGF/HIAS)", "r": "Presidente"}, {"n": "Mariana Brasil", "r": "Moderadora"}]}]}, {"id": 98, "date": "2026-11-13", "ini": "08:00", "fim": "08:30", "room": "Sala 7", "kind": "", "title": "É tudo TEA?", "desc": "", "subs": [{"t": "", "sp": [{"n": "José Leandro", "r": "Palestrante"}, {"n": "André Cabral", "r": "Presidente"}, {"n": "Raquel Diógenes", "r": "Moderadora"}]}]}, {"id": 99, "date": "2026-11-13", "ini": "08:30", "fim": "09:00", "room": "Sala 7", "kind": "", "title": "É tudo TDAH?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Joana Torres", "r": "Palestrante"}, {"n": "André Cabral", "r": "Presidente"}, {"n": "Raquel Diógenes", "r": "Moderadora"}]}]}, {"id": 100, "date": "2026-11-13", "ini": "10:00", "fim": "10:30", "room": "Sala 7", "kind": "", "title": "Distúrbios do sono e do comportamento na infância", "desc": "", "subs": [{"t": "", "sp": [{"n": "Patricia Lobo", "r": "Palestrante"}, {"n": "Adelina Feitosa", "r": "Presidente"}, {"n": "Rodrigo Costa (PETER PAN)", "r": "Moderador"}]}]}, {"id": 101, "date": "2026-11-13", "ini": "10:30", "fim": "11:00", "room": "Sala 7", "kind": "", "title": "Plugados além da conta: saúde mental e dependência digital", "desc": "", "subs": [{"t": "", "sp": [{"n": "André Cabral", "r": "Palestrante"}, {"n": "Adelina Feitosa", "r": "Presidente"}, {"n": "Rodrigo Costa (PETER PAN)", "r": "Moderador"}]}]}, {"id": 102, "date": "2026-11-13", "ini": "11:30", "fim": "12:30", "room": "Sala 7", "kind": "Simpósio satélite Mantecorp", "title": "Uso de corticoide no paciente pediátrico", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dr. Tadeu Fernandes", "r": "Palestrante"}]}]}, {"id": 103, "date": "2026-11-13", "ini": "14:00", "fim": "14:30", "room": "Sala 7", "kind": "", "title": "Diagnóstico precoce do câncer infantil: abordagem e exames iniciais", "desc": "", "subs": [{"t": "", "sp": [{"n": "Alex Monteiro", "r": "Palestrante"}, {"n": "Cinara Neves", "r": "Presidente"}, {"n": "Patrícia Narelly (PETER PAN)", "r": "Moderadora"}]}]}, {"id": 104, "date": "2026-11-13", "ini": "14:30", "fim": "15:00", "room": "Sala 7", "kind": "", "title": "Manejo da dor na pediatria do futuro: além da escala analgésica", "desc": "", "subs": [{"t": "", "sp": [{"n": "Krislane Vasconcelos", "r": "Palestrante"}, {"n": "Cinara Neves", "r": "Presidente"}, {"n": "Patrícia Narelly (PETER PAN)", "r": "Moderadora"}]}]}, {"id": 105, "date": "2026-11-13", "ini": "16:00", "fim": "16:30", "room": "Sala 7", "kind": "", "title": "Atualizações na sequência rápida de intubação", "desc": "", "subs": [{"t": "", "sp": [{"n": "Diego Ferreira", "r": "Palestrante"}, {"n": "Érica Barbosa Coutinho", "r": "Presidente"}, {"n": "Manoela Monte", "r": "Moderadora"}]}]}, {"id": 106, "date": "2026-11-13", "ini": "16:30", "fim": "17:00", "room": "Sala 7", "kind": "", "title": "Manejo do paciente séptico", "desc": "", "subs": [{"t": "", "sp": [{"n": "Bárbara Montenegro", "r": "Palestrante"}, {"n": "Érica Barbosa Coutinho", "r": "Presidente"}, {"n": "Manoela Monte", "r": "Moderadora"}]}]}, {"id": 107, "date": "2026-11-13", "ini": "08:00", "fim": "08:30", "room": "Sala 8", "kind": "", "title": "Sífilis congênita: o que há de novo?", "desc": "", "subs": [{"t": "", "sp": [{"n": "Robério Leite", "r": "Palestrante"}, {"n": "Zilma Macedo", "r": "Presidente"}, {"n": "Ana Nery", "r": "Moderadora"}]}]}, {"id": 108, "date": "2026-11-13", "ini": "08:30", "fim": "09:00", "room": "Sala 8", "kind": "", "title": "Manejo da sepse fúngica no período neonatal", "desc": "", "subs": [{"t": "", "sp": [{"n": "Nerci Ciarlini", "r": "Palestrante"}, {"n": "Zilma Macedo", "r": "Presidente"}, {"n": "Ana Nery", "r": "Moderadora"}]}]}, {"id": 109, "date": "2026-11-13", "ini": "10:00", "fim": "10:30", "room": "Sala 8", "kind": "", "title": "Novos limites da viabilidade neonatal: abrindo espaço para micro e nanoprematuros", "desc": "", "subs": [{"t": "", "sp": [{"n": "Fabíola Arraes", "r": "Palestrante"}, {"n": "Eveline Monteiro", "r": "Presidente"}, {"n": "Marina Brigido", "r": "Moderadora"}]}]}, {"id": 110, "date": "2026-11-13", "ini": "10:30", "fim": "11:00", "room": "Sala 8", "kind": "", "title": "Cuidados paliativos em neonatologia", "desc": "", "subs": [{"t": "", "sp": [{"n": "Cinara Neves", "r": "Palestrante"}, {"n": "Eveline Monteiro", "r": "Presidente"}, {"n": "Marina Brigido", "r": "Moderadora"}]}]}, {"id": 111, "date": "2026-11-13", "ini": "11:30", "fim": "12:30", "room": "Sala 8", "kind": "Simpósio MSD", "title": "Enflonsia: ampliando as estratégias de proteção contra o VSR", "desc": "", "subs": [{"t": "", "sp": [{"n": "Dra. Isabella Ballalai", "r": "Palestrante"}]}]}, {"id": 112, "date": "2026-11-13", "ini": "14:00", "fim": "14:30", "room": "Sala 8", "kind": "", "title": "Manejo inicial do recém-nascido com suspeita de cardiopatia congênita crítica", "desc": "", "subs": [{"t": "", "sp": [{"n": "Klebia Castelo", "r": "Palestrante"}, {"n": "Ana Paula Constancio", "r": "Presidente"}, {"n": "Lilianny Medeiros Pereira", "r": "Moderadora"}]}]}, {"id": 113, "date": "2026-11-13", "ini": "14:30", "fim": "15:00", "room": "Sala 8", "kind": "", "title": "Desnutrição pós-natal: desafios da nova neonatologia", "desc": "", "subs": [{"t": "", "sp": [{"n": "Ana Rosana", "r": "Palestrante"}, {"n": "Ana Paula Constancio", "r": "Presidente"}, {"n": "Lilianny Medeiros Pereira", "r": "Moderadora"}]}]}, {"id": 114, "date": "2026-11-13", "ini": "16:00", "fim": "16:30", "room": "Sala 8", "kind": "", "title": "Nutrição parenteral total: como manejar em situações especiais", "desc": "", "subs": [{"t": "", "sp": [{"n": "Sarah Melgaço", "r": "Palestrante"}, {"n": "Fabíola Arraes", "r": "Presidente"}, {"n": "Jocelia Bringel", "r": "Moderadora"}]}]}, {"id": 115, "date": "2026-11-13", "ini": "16:30", "fim": "17:00", "room": "Sala 8", "kind": "", "title": "Lesão renal aguda em recém-nascidos: novos critérios diagnósticos", "desc": "", "subs": [{"t": "", "sp": [{"n": "Kátia Liliane", "r": "Palestrante"}, {"n": "Fabíola Arraes", "r": "Presidente"}, {"n": "Jocelia Bringel", "r": "Moderadora"}]}]}]}</script>
+<script>
+(function(){
+// ===== Anúncio Clínica Alberto Lima: edite aqui =====
+const AD = {
+  url: 'https://www.instagram.com/clinicaalbertolima/',
+  handle: 'clinicaalbertolima',
+  name: 'Clínica Alberto Lima',
+  stats: [['978','posts'],['31,1 mil','seguidores']],
+  bio: ['💕 Amor, Carinho e Cuidado','🩺 Excelência em Pediatria há mais de 42 anos','🏥 Clínica Pediátrica · Iguatemi Bosque, Fortaleza'],
+  cta: 'Seguir'
+};
+const CAL_AVATAR = document.getElementById('calavatar').textContent.trim();
+function adHtml(){
+  return '<a class="ad" href="'+AD.url+'" target="_blank" rel="noopener" aria-label="'+AD.name+' no Instagram">'
+    +'<div class="row"><div class="av"><img src="'+CAL_AVATAR+'" alt=""></div><div class="who">'
+    +'<p class="handle">'+AD.handle+'</p>'
+    +'<p class="name">'+AD.name+'</p>'
+    +'<div class="stats">'+AD.stats.map(x=>'<span><b>'+x[0]+'</b> '+x[1]+'</span>').join('')+'</div>'
+    +'</div></div>'
+    +'<p class="bio">'+AD.bio.map(l=>'<span>'+l+'</span>').join('')+'</p>'
+    +'<span class="follow">'+AD.cta+'</span></a>';
+}
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const S = DATA.sessions, DAYS = DATA.days;
+const byId = Object.fromEntries(S.map(s=>[s.id,s]));
+const ROOMC = {'Sala Rebouças':'var(--r7)','Sala 5':'var(--r1)','Sala 5.1':'var(--r6)','Sala 6':'var(--r3)','Sala 7':'var(--r2)','Sala 8':'var(--r4)','Auditório Pedro Borges':'var(--r1)','Manoel Veras':'var(--r3)','Sávio Parente':'var(--r2)','Várias salas':'var(--r5)'};
+const ROOMFULL = DATA.roomfull||{};
+const KSHORT={'Atividade IA (Interdisciplinaridade em Ação)':'Atividade IA','Apresentação de Temas Livres':'Temas Livres'};
+const kshort=k=>KSHORT[k]||k;
+const KEY='pedce2026.sel', KEYG='pedce2026.gen';
+let sel = new Set(JSON.parse(localStorage.getItem(KEY)||'[]'));
+let view='grade', day=null, q='', onlySel=false, showGen = true;
+let openCards = new Set();
+
+// default day: today if in range
+const today = new Date(); const ymd = today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+day = DAYS.some(d=>d.date===ymd) ? ymd : DAYS[0].date;
+
+// import from link
+(function(){ const m = location.hash.match(/s=([\d,]+)/); if(!m) return;
+  const ids = m[1].split(',').map(Number).filter(i=>byId[i]);
+  history.replaceState(null,'',location.pathname+location.search);
+  if(!ids.length) return;
+  const same = ids.length===sel.size && ids.every(i=>sel.has(i));
+  if(same) return;
+  if(sel.size===0 || confirm('Carregar a agenda compartilhada neste link ('+ids.length+' atividades)? Isso substitui sua seleção atual.')){ sel=new Set(ids); save(); view='agenda'; }
+})();
+
+function save(){ localStorage.setItem(KEY, JSON.stringify([...sel])); }
+function toMin(t){ const [h,m]=t.split(':').map(Number); return h*60+m; }
+function overlap(a,b){ return a.date===b.date && toMin(a.ini)<toMin(b.fim) && toMin(b.ini)<toMin(a.fim); }
+function conflicts(s){ if(s.room==='*') return false; return [...sel].some(i=>i!==s.id && byId[i].room!=='*' && overlap(byId[i],s)); }
+function esc(t){ return String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function hl(t){ t=esc(t); if(!q) return t; const re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'); return t.replace(re,'<mark>$1</mark>'); }
+function norm(t){ return t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+function matches(s){ if(!q) return true; const n=norm(q); const hay=[s.title,s.kind,s.desc,s.room,...s.subs.flatMap(x=>[x.t,...x.sp.map(p=>p.n)])].join(' '); return norm(hay).includes(n); }
+function toast(m){ const t=document.getElementById('toast'); t.textContent=m; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),2200); }
+function speakersHtml(sp){ return sp.map(p=>'<b>'+hl(p.n)+'</b>'+(p.r?' <span class="rl">('+esc(p.r)+')</span>':'')).join(' · '); }
+function dayLabel(d){ const x=DAYS.find(y=>y.date===d); return x? x.dow+' '+x.label : d; }
+
+const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg>';
+const ICON_DOWN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+
+function renderDays(){
+  const el=document.getElementById('days');
+  el.innerHTML = DAYS.map(d=>{ const n=S.filter(s=>s.date===d.date&&sel.has(s.id)).length;
+    return '<button data-d="'+d.date+'" class="'+(d.date===day?'on':'')+'"><span class="d1">'+d.dow+' '+d.label+(n?'<span class="n">'+n+'</span>':'')+'</span><span class="d2">'+(d.note||(d.date===ymd?'hoje':'&nbsp;'))+'</span></button>'; }).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{ day=b.dataset.d; render(); });
+  document.getElementById('cnt').textContent = sel.size;
+}
+
+function cardHtml(s){
+  const isSel=sel.has(s.id), conf=isSel&&conflicts(s), open=openCards.has(s.id)||!!q;
+  const dim = (onlySel&&!isSel) || !matches(s);
+  if(dim && (onlySel||q)) return '';
+  const subs = s.subs.filter(x=>x.t||x.sp.length);
+  const hasDet = s.desc || subs.length;
+  return '<article class="card'+(isSel?' sel':'')+(conf?' conf':'')+(open?' open':'')+'" data-id="'+s.id+'" style="--rc:'+(ROOMC[s.room]||'#64748b')+'">'
+    +'<div class="top"><span class="room" title="'+esc(ROOMFULL[s.room]||s.room)+'">'+esc(s.room)+'</span><span class="kind">'+esc(kshort(s.kind))+'</span><span class="till">até '+esc(s.fim)+'</span></div>'
+    +'<h3>'+hl(s.title||s.kind)+'</h3>'
+    +(s.desc?'<p class="desc">'+hl(s.desc)+'</p>':'')
+    +'<span class="conf-tag">⚠ Mesmo horário de outra escolha</span>'
+    +(hasDet&&subs.length?'<button class="more" data-more="'+s.id+'">'+(open?'Ocultar detalhes':'Ver temas e palestrantes')+' '+ICON_DOWN+'</button>'
+    +'<div class="det">'+subs.map(x=>'<div class="sub">'+(x.t?'<div class="st">'+hl(x.t)+'</div>':'')+(x.sp.length?'<div class="sp">'+speakersHtml(x.sp)+'</div>':'')+'</div>').join('')+'</div>':'')
+    +'<button class="pick" data-pick="'+s.id+'" aria-label="Selecionar">'+ICON_CHECK+'</button>'
+    +'</article>';
+}
+function plenHtml(s){
+  const isSel=sel.has(s.id);
+  if((onlySel&&!isSel)||!matches(s)) return '';
+  const subs=s.subs.filter(x=>x.t||x.sp.length);
+  return '<div class="plen'+(isSel?' sel':'')+'" data-id="'+s.id+'">'
+    +'<div class="pbody"><div class="pt">Atividade geral · '+esc(s.ini)+' às '+esc(s.fim)+'</div>'
+    +'<div class="pk">'+hl(s.kind)+(s.title?': '+hl(s.title):'')+'</div>'
+    +(s.desc?'<div class="pd">'+hl(s.desc)+'</div>':'')
+    +subs.map(x=>(x.t?'<ul class="sublist"><li>'+hl(x.t)+'</li></ul>':'')+(x.sp.length?'<div class="sp">'+speakersHtml(x.sp)+'</div>':'')).join('')
+    +'</div><button class="pick" data-pick="'+s.id+'" aria-label="Incluir na agenda">'+ICON_CHECK+'</button></div>';
+}
+
+function renderGrade(){
+  const main=document.getElementById('main');
+  const d=DAYS.find(x=>x.date===day);
+  const list=S.filter(s=>s.date===day);
+  // group by time slot
+  const slots=[]; const map={};
+  list.forEach(s=>{ const k=s.ini; if(!map[k]){ map[k]={ini:s.ini,fim:s.fim,items:[]}; slots.push(map[k]); } map[k].items.push(s); });
+  slots.sort((a,b)=>toMin(a.ini)-toMin(b.ini)); const RO=d.rooms; slots.forEach(sl=>sl.items.sort((a,b)=>(a.room==='*'?-1:RO.indexOf(a.room))-(b.room==='*'?-1:RO.indexOf(b.room))||toMin(a.fim)-toMin(b.fim)));
+  let html=adHtml()+'<p class="hint">Toque no círculo para escolher. Escolhas no mesmo horário ficam marcadas em laranja.</p>';
+  let any=false;
+  slots.forEach(sl=>{
+    const plens=sl.items.filter(s=>s.room==='*'), par=sl.items.filter(s=>s.room!=='*');
+    const pH=showGen?plens.map(plenHtml).join(''):'';
+    const cH=par.map(cardHtml).join('');
+    if(!pH&&!cH) return; any=true;
+    html+='<section class="slot"><div class="slot-h"><span class="t">'+sl.ini+'</span><span class="l"></span><span class="k">'+(par.length?par.length+' salas':'')+'</span></div>'
+      +pH+(pH&&cH?'<div style="height:8px"></div>':'')
+      +(cH?'<div class="cards" style="--cols:'+Math.min(d.rooms.length,4)+'">'+cH+'</div>':'')+'</section>';
+  });
+  if(!any) html+='<div class="empty">'+(q?'Nada encontrado para <b>'+esc(q)+'</b> neste dia.':'Nenhuma atividade selecionada neste dia.')+'</div>';
+  main.innerHTML=html;
+}
+
+function renderAgenda(){
+  const main=document.getElementById('main');
+  let html=adHtml()+'<div class="ag-tools">'
+    +'<button class="btn" id="bCopy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>Copiar texto (WhatsApp)</button>'
+    +'<button class="btn" id="bIcs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Baixar para o calendário (.ics)</button>'
+    +'<button class="btn" id="bPrint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7"/></svg>Imprimir / PDF</button>'
+        +'<button class="btn danger" id="bClear">Limpar tudo</button></div>';
+  if(sel.size===0){ html+='<div class="empty">Sua agenda está vazia.<br>Vá em <b>Grade completa</b> e toque no círculo das palestras que quer assistir.</div>'; main.innerHTML=html; bind(); return; }
+  DAYS.forEach(d=>{
+    const chosen=S.filter(s=>s.date===d.date&&sel.has(s.id));
+    const gens=showGen?S.filter(s=>s.date===d.date&&s.room==='*'&&!sel.has(s.id)):[];
+    const items=[...chosen,...gens].sort((a,b)=>toMin(a.ini)-toMin(b.ini)||toMin(a.fim)-toMin(b.fim)||(a.room==='*'?-1:1));
+    if(!chosen.length) return;
+    html+='<div class="ag-day"><h2>'+d.dow+' '+d.label+'<small>'+chosen.length+' escolha'+(chosen.length>1?'s':'')+(d.note?' · '+d.note:'')+'</small></h2>';
+    items.forEach(s=>{
+      const isSel=sel.has(s.id), gen=!isSel, conf=isSel&&conflicts(s);
+      const subs=s.subs.filter(x=>(x.t||x.sp.length)&&!(x.t==='Debate'&&!x.sp.length));
+      const sp=subs.flatMap(x=>x.sp).filter(p=>p.r!=='Avaliador de Trabalhos');
+      html+='<div class="ag'+(gen?' gen':'')+(conf?' conf':'')+'"><div class="time"><b>'+s.ini+'</b><span>'+s.fim+'</span></div><div class="body">'
+        +'<div class="meta">'+(s.room!=='*'?'<span class="room" style="--rc:'+(ROOMC[s.room]||'#64748b')+'">'+esc(s.room)+'</span>':'')+(s.title?'<span>'+esc(kshort(s.kind))+'</span>':'')+(conf?'<span style="color:var(--warnb);font-weight:700">⚠ mesmo horário</span>':'')+'</div>'
+        +'<h4>'+esc(s.title||s.kind)+'</h4>'
+        +(isSel&&subs.length&&s.kind.indexOf('Temas Livres')<0?'<div class="sp">'+subs.map(x=>(x.t?esc(x.t):'')+(x.t&&x.sp.length?' · ':'')+speakersHtml(x.sp)).filter(Boolean).join('<br>')+'</div>':'')
+        +(isSel?'<button class="rm" data-rm="'+s.id+'" title="Remover">×</button>':'')
+        +'</div></div>';
+    });
+    html+='</div>';
+  });
+  main.innerHTML=html; bind();
+}
+
+function agendaText(){
+  let out='🗓 Minha agenda Pediatria CE 2026\n';
+  DAYS.forEach(d=>{ const ch=S.filter(s=>s.date===d.date&&sel.has(s.id)).sort((a,b)=>toMin(a.ini)-toMin(b.ini)); if(!ch.length) return;
+    out+='\n*'+d.dow+' '+d.label+'*\n'; ch.forEach(s=>{ out+='• '+s.ini+' a '+s.fim+(s.room!=='*'?' · '+s.room:'')+'\n   '+(s.title||s.kind)+'\n'; }); });
+  out+='\nMonte a sua: '+shareUrl();
+  return out;
+}
+function shareUrl(){ return location.origin+location.pathname+'#s='+[...sel].join(','); }
+function icsText(){
+  const pad=n=>String(n).padStart(2,'0');
+  const dt=(date,t)=>date.replace(/-/g,'')+'T'+t.replace(':','')+'00';
+  let ics='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Minha grade Pediatria CE 2026//PT\r\nCALSCALE:GREGORIAN\r\nBEGIN:VTIMEZONE\r\nTZID:America/Fortaleza\r\nBEGIN:STANDARD\r\nDTSTART:19700101T000000\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nEND:STANDARD\r\nEND:VTIMEZONE\r\n';
+  [...sel].map(i=>byId[i]).forEach(s=>{
+    const desc=s.subs.filter(x=>x.t||x.sp.length).map(x=>(x.t?x.t+' ':'')+(x.sp.length?'('+x.sp.map(p=>p.n).join(', ')+')':'')).join('\\n');
+    ics+='BEGIN:VEVENT\r\nUID:pedce2026-'+s.id+'@minhagrade\r\nDTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+Z/,'Z')+'\r\nDTSTART;TZID=America/Fortaleza:'+dt(s.date,s.ini)+'\r\nDTEND;TZID=America/Fortaleza:'+dt(s.date,s.fim)+'\r\nSUMMARY:'+(s.title||s.kind).replace(/[,;]/g,'\\$&')+'\r\nLOCATION:'+(s.room==='*'?'Centro de Eventos do Ceará':s.room+'\\, Centro de Eventos do Ceará')+'\r\nDESCRIPTION:'+(s.kind+'\\n'+desc).replace(/[,;]/g,'\\$&')+'\r\nEND:VEVENT\r\n';
+  });
+  return ics+'END:VCALENDAR\r\n';
+}
+function download(name,text,type){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([text],{type})); a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),2000); }
+async function copy(t){ try{ await navigator.clipboard.writeText(t); toast('Copiado!'); }catch(e){ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); toast('Copiado!'); } }
+
+function bind(){
+  const main=document.getElementById('main');
+  main.onclick=e=>{
+    const p=e.target.closest('[data-pick]'); if(p){ const id=+p.dataset.pick; if(sel.has(id)){sel.delete(id);} else { sel.add(id); const s=byId[id]; if(conflicts(s)) toast('Atenção: já existe escolha no mesmo horário'); } save(); render(); return; }
+    const m=e.target.closest('[data-more]'); if(m){ const id=+m.dataset.more; openCards.has(id)?openCards.delete(id):openCards.add(id); render(); return; }
+    const r=e.target.closest('[data-rm]'); if(r){ sel.delete(+r.dataset.rm); save(); render(); return; }
+    if(e.target.id==='bCopy') copy(agendaText());
+    if(e.target.closest('#bCopy')) copy(agendaText());
+    if(e.target.closest('#bIcs')) download('minha-agenda-pediatria-ce-2026.ics', icsText(), 'text/calendar');
+    if(e.target.closest('#bPrint')) window.print();
+    if(e.target.closest('#bClear')){ if(confirm('Limpar todas as escolhas?')){ sel.clear(); save(); render(); } }
+    const card=e.target.closest('.card'); if(card && !e.target.closest('button')){ const id=+card.dataset.id; openCards.has(id)?openCards.delete(id):openCards.add(id); render(); }
+  };
+}
+
+function render(){
+  renderDays();
+  document.getElementById('vGrade').classList.toggle('on',view==='grade');
+  document.getElementById('vAgenda').classList.toggle('on',view==='agenda');
+  document.getElementById('days').style.display = view==='grade'?'':'none';
+  document.getElementById('tools').style.display = view==='grade'?'':'none';
+  if(view==='grade'){ renderGrade(); bind(); } else renderAgenda();
+}
+
+document.getElementById('vGrade').onclick=()=>{view='grade';render();};
+document.getElementById('vAgenda').onclick=()=>{view='agenda';render();window.scrollTo(0,0);};
+const qi=document.getElementById('q'); qi.oninput=()=>{ q=qi.value.trim(); document.getElementById('searchWrap').classList.toggle('has',!!q); render(); };
+document.getElementById('qx').onclick=()=>{ qi.value=''; q=''; document.getElementById('searchWrap').classList.remove('has'); render(); qi.focus(); };
+document.getElementById('btnShare').onclick=async()=>{
+  if(sel.size===0){ toast('Escolha palestras primeiro'); return; }
+  const text=agendaText();
+  if(navigator.share){ try{ await navigator.share({title:'Minha agenda Pediatria CE 2026', text}); return; }catch(e){} }
+  copy(text);
+};
+// ---- instalação na tela de início ----
+(function(){
+  const KI='pedce2026.instHide';
+  const el=document.getElementById('inst'), tx=document.getElementById('instTxt'), go=document.getElementById('instGo');
+  const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone===true;
+  if(standalone || localStorage.getItem(KI)==='1') return;
+  const ua=navigator.userAgent||'';
+  const ios=/iPhone|iPad|iPod/i.test(ua);
+  const inApp=/FBAN|FBAV|Instagram|WhatsApp|Line\/|Twitter/i.test(ua) || (ios && !/Safari/i.test(ua));
+  let deferred=null;
+  window.addEventListener('beforeinstallprompt',e=>{ e.preventDefault(); deferred=e; go.style.display='inline-block'; tx.innerHTML='Toque em <em>Instalar</em> para abrir como app, com ícone na tela de início.'; el.classList.add('show'); });
+  go.onclick=async()=>{ if(!deferred) return; deferred.prompt(); const r=await deferred.userChoice; if(r.outcome==='accepted'){ el.classList.remove('show'); localStorage.setItem(KI,'1'); } };
+  if(ios){
+    tx.innerHTML = inApp
+      ? 'Abra este link no <em>Safari</em> (toque nos três pontinhos e escolha “Abrir no Safari”). Depois toque em <em>Compartilhar</em> e em <em>Adicionar à Tela de Início</em>.'
+      : 'No Safari, toque em <em>Compartilhar</em> (quadrado com seta) e depois em <em>Adicionar à Tela de Início</em>.';
+    el.classList.add('show');
+  } else if(/Android/i.test(ua)){
+    tx.innerHTML = inApp
+      ? 'Abra este link no <em>Chrome</em> (menu ⋮ e “Abrir no Chrome”). Depois toque no menu ⋮ e em <em>Adicionar à tela inicial</em>.'
+      : 'No Chrome, toque no menu <em>⋮</em> e em <em>Adicionar à tela inicial</em> (ou “Instalar app”).';
+    el.classList.add('show');
+  }
+  document.getElementById('instX').onclick=()=>{ el.classList.remove('show'); localStorage.setItem(KI,'1'); };
+})();
+render();
+})();
+</script>
+<script data-goatcounter="https://abenepi2026.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
